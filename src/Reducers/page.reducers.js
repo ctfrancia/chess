@@ -5,5 +5,11 @@ const defaultState = {
 };
 
 export default function pageReducers(state = defaultState, action) {
+  switch (action.type) {
+    case 'LOADING_TRUE':
+      return state;
 
+    default:
+      return state;
+  }
 }
